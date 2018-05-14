@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import FilterableTable from './components/FilterableTable';
-import About from './components/About';
+import FilterableTable from './components/App/FilterableTable/FilterableTable';
+import About from './components/App/About/About';
 
 export default (
 	<Switch>
