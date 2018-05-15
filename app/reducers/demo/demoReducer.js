@@ -3,6 +3,7 @@ import DemoClass from './demoClass'
 
 const initialState = new DemoClass({
     appName: 'No name',
+    apiData: null
 })
 
 function demoReducer(state = initialState, action) {

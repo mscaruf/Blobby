@@ -13,6 +13,10 @@ class DemoClass extends BaseClass {
     getAppName() {
         return this.appName
     }
+
+    fetchFromApi(response, args) {
+        this.set('apiData', response)
+    }
 }
 
 export default DemoClass

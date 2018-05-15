@@ -5,8 +5,7 @@ export function get(url, event_type, args) {
         axios.get(url)
             .then((response) => dispatch({
                 type: event_type,
-                response: response,
-                args: args
+                args: new Array(response.data, ...args)
             })).catch((response) => dispatch({
                 type: "ERROR",
                 response: response
