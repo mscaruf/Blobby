@@ -8,7 +8,7 @@ const demo = (state = '', action) => {
                   }
               ]
         case "ERROR":
-            console.log("Non riesco a fetchare dall'api...")
+            console.log("Cannot fetch from API...")
         default:
             return state;
     }
