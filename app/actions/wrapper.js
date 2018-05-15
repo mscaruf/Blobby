@@ -12,3 +12,7 @@ export function get(url, event_type) {
             }));
     }
 }
+
+export function emit(event_type, args) {
+    return { type: event_type, args: args };
+}

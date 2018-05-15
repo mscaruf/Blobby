@@ -1,17 +1,14 @@
-const demo = (state = '', action) => {
-    switch (action.type) {
-        case "FETCH_FROM_API":
-            return [
-                  ...state,
-                  {
-                      apidata: action.response.data
-                  }
-              ]
-        case "ERROR":
-            console.log("Cannot fetch from API...")
-        default:
-            return state;
-    }
-};
+import { ReduxClassWrapper } from 'red-redux-class'
+import DemoClass from './demoClass'
 
-export default demo;
+const initialState = new DemoClass({
+    appName: 'No name',
+})
+
+function demoReducer(state = initialState, action) {
+    const newState = state.new()
+    newState.callRelatedAction(action);
+    return newState;
+}
+
+export default ReduxClassWrapper(demoReducer)
