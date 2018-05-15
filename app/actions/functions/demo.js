@@ -2,7 +2,7 @@ import axios from 'axios';
 import * as wrapper from '../wrapper'
 
 export function fetchFromApi() {
-    return wrapper.get("http://jsonplaceholder.typicode.com/posts/1", "FETCH_FROM_API");
+    return wrapper.get("http://jsonplaceholder.typicode.com/posts/1", "FETCH_FROM_API", new Array());
 }
 
 export function setAppName(appName) {
