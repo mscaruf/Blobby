@@ -1,18 +1,34 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import * as DemoActions from '../../../actions/functions/demo';
 
 class Demo extends React.Component {
-  render() {
-    return(
-      <div>
-        <h2>Demo app for boilerplate</h2>
-      </div>
-    );
-  }
+
+    componentDidMount() {
+        this.props.dispatch(DemoActions.FetchFromApi());
+    }
+
+    getApiData(){
+        return (
+            <div>{(this.props.apidata[0] !== undefined)
+              ? this.props.apidata[0].apidata.title : "loading..." }</div>
+          );
+    }
+
+    render() {
+        return (
+            <div>
+                <h2>Fetching stuff from an api:</h2>
+                {this.getApiData()}
+            </div>
+        );
+    }
 }
 
 function mapStateToProps(state) {
-  return {}
+    return {
+        apidata: state.demo
+    };
 }
 
 export default connect(mapStateToProps)(Demo)
