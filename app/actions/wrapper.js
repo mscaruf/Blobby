@@ -1,11 +1,12 @@
 import axios from 'axios';
 
-export function get(url, event_type) {
+export function get(url, event_type, args) {
     return function (dispatch) {
         axios.get(url)
             .then((response) => dispatch({
                 type: event_type,
                 response: response,
+                args: args
             })).catch((response) => dispatch({
                 type: "ERROR",
                 response: response
