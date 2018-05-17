@@ -28,7 +28,8 @@
     "react-router-redux": "next",
     "red-redux-class": "^1.0.4",
     "redux": "^3.5.2",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "webpack-sass-loaders": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
