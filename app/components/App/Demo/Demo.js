@@ -6,7 +6,8 @@ class Demo extends React.Component {
 
     componentDidMount() {
         this.props.dispatch(DemoActions.setAppName("DemoApp"));
-        this.props.dispatch(DemoActions.fetchFromApi())
+        this.props.dispatch(DemoActions.fetchFromApi());
+        this.props.dispatch(DemoActions.sendSomeStuffToApi());
     }
 
     getApiData(){

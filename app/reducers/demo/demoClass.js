@@ -17,6 +17,10 @@ class DemoClass extends BaseClass {
     fetchFromApi(response, args) {
         this.set('apiData', response)
     }
+
+    sendToApi(response) {
+        this.set('sendComplete', true);
+    }
 }
 
 export default DemoClass
