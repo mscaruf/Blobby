@@ -1,9 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import * as DemoActions from '../../../actions/functions/demo';
+import DatePicker from 'react-datepicker';
 import { Form, Text } from 'react-form';
+import moment from 'moment';
 
 class Demo extends React.Component {
+
+    constructor() {
+        super();
+        this.state = {startDate: moment()};
+    }
 
     componentDidMount() {
         this.props.dispatch(DemoActions.setAppName("DemoApp"));
@@ -17,13 +24,21 @@ class Demo extends React.Component {
           );
     }
 
+    handleChange = (date) => {
+        this.setState({startDate: date});
+    }
+
     mapFormToComponent = (formApi) => {
         this.formApi = formApi;
     }
 
-    outerSubmit = (e) => {
+    outerSubmit = (e) => {      
         e.preventDefault();
-        this.props.dispatch(DemoActions.sendSomeStuffToApi(this.formApi.formValues));
+        if (typeof this.formApi.errors !== 'undefined') {
+            return;
+        }
+        this.formApi.values.startDate = this.state.startDate.format("DD-MM-YYYY");
+        this.props.dispatch(DemoActions.sendSomeStuffToApi(this.formApi.values));
     }
 
     render() {
@@ -42,6 +57,7 @@ class Demo extends React.Component {
                 <Form>
                 {formApi => (
                   <form onSubmit={this.mapFormToComponent(formApi)} id="form1" className="mb-4">
+                    <DatePicker selected={this.state.startDate} onChange={this.handleChange}/>
                     <label htmlFor="hello">Hello World</label>
                     <Text field="hello" id="hello" validate={validate} />
                     <button type="submit" className="btn btn-primary" onClick={this.outerSubmit}>
