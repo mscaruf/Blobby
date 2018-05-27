@@ -8,7 +8,6 @@ class Demo extends React.Component {
     componentDidMount() {
         this.props.dispatch(DemoActions.setAppName("DemoApp"));
         this.props.dispatch(DemoActions.fetchFromApi());
-        this.props.dispatch(DemoActions.sendSomeStuffToApi());
     }
 
     getApiData(){
@@ -18,16 +17,13 @@ class Demo extends React.Component {
           );
     }
 
-    getSubmitResult = (formApi) => {
-        this.formValues = formApi.values;
+    mapFormToComponent = (formApi) => {
         this.formApi = formApi;
-        //this.setState({formValues: formApi.values});
     }
 
     outerSubmit = (e) => {
         e.preventDefault();
-        console.log("CIAONE!");
-        debugger;
+        this.props.dispatch(DemoActions.sendSomeStuffToApi(this.formApi.formValues));
     }
 
     render() {
@@ -45,7 +41,7 @@ class Demo extends React.Component {
 
                 <Form>
                 {formApi => (
-                  <form onSubmit={this.getSubmitResult(formApi)} id="form1" className="mb-4">
+                  <form onSubmit={this.mapFormToComponent(formApi)} id="form1" className="mb-4">
                     <label htmlFor="hello">Hello World</label>
                     <Text field="hello" id="hello" validate={validate} />
                     <button type="submit" className="btn btn-primary" onClick={this.outerSubmit}>
