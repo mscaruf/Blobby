@@ -4,7 +4,7 @@ import { footer } from '../../styles/global.scss';
 import Routes from '../../routes';
 
 const App = () =>
-    <div>
+    <div className="container">
         <h1>Demo app</h1>
         { Routes }
         <footer className={footer}>

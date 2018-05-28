@@ -32,6 +32,7 @@
     "red-redux-class": "^1.0.4",
     "redux": "^3.5.2",
     "redux-thunk": "^2.2.0",
+    "skeleton-css": "^2.0.4",
     "webpack-sass-loaders": "^1.0.0"
   },
   "devDependencies": {

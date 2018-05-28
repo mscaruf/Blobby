@@ -46,15 +46,15 @@ class DemoForm extends React.Component {
 
             <Form>
             {formApi => (
-              <form onSubmit={this.mapFormToComponent(formApi)} id="form1" className="mb-4">
-                <DatePicker selected={this.state.startDate} onChange={this.handleChange}/>
-                <label htmlFor="hello">Hello World</label>
-                <Text field="hello" id="hello" validate={validate} />
-                <button type="submit" className="btn btn-primary" onClick={this.submit}>
-                  Submit
-                </button>
-                {(typeof formApi.errors !== 'undefined') && <p>{formApi.errors.hello}</p>}
-              </form>
+                <div className="row">
+                    <form onSubmit={this.mapFormToComponent(formApi)} id="form1" className="mb-4">
+                        <DatePicker selected={this.state.startDate} onChange={this.handleChange}/>
+                        <label htmlFor="hello">Hello World</label>
+                        <Text type="text" className="u-full-width" field="hello" id="hello" validate={validate} />
+                        <input type="submit" className="btn btn-primary" onClick={this.submit} value="Submit"/>
+                        {(typeof formApi.errors !== 'undefined') && <p>{formApi.errors.hello}</p>}
+                    </form>
+                </div>
             )}
             </Form>
         );

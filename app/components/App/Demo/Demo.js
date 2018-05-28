@@ -30,9 +30,12 @@ class Demo extends React.Component {
     render() {
         return (
             <div>
-                <h2>AppName:</h2>
-                <h3>{this.props.appName}</h3>
-                {this.getApiData()}
+                <div className="row">
+                    <h2>AppName:</h2>
+                    <h3>{this.props.appName}</h3>
+                    <code>Some code!</code>
+                    {this.getApiData()}
+                </div>
                 <DemoForm callback={this.sendDataToApi} />
             </div>
         );
