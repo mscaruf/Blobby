@@ -5,11 +5,15 @@ import Routes from '../../routes';
 
 const App = () =>
     <div className="container">
-        <h1>Demo app</h1>
+        <h1>Blobby</h1>
         { Routes }
         <footer className={footer}>
-            <Link to="/">Demo app</Link>
-            <Link to="/about">About</Link>
+            <Link to="/">Overview</Link>
+            <Link to="/getting-started">Getting started</Link>
+            <Link to="/forms">Forms</Link>
+            <Link to="/actions">Actions</Link>
+            <Link to="/redux">Redux</Link>
+            <Link to="/connect">Connect</Link>
         </footer>
     </div>;
 

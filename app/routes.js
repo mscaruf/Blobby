@@ -1,11 +1,20 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Demo from './components/App/Demo/Demo'
-import About from './components/App/About/About';
+
+import Overview from './components/App/Blobby/Walkthrough/Overview/Overview';
+import GettingStarted from './components/App/Blobby/Walkthrough/GettingStarted/GettingStarted';
+import Forms from './components/App/Blobby/Walkthrough/Forms/Forms';
+import Actions from './components/App/Blobby/Walkthrough/Actions/Actions';
+import Redux from './components/App/Blobby/Walkthrough/Redux/Redux';
+import Connect from './components/App/Blobby/Walkthrough/Connect/Connect';
 
 export default (
-	<Switch>
-		<Route exact path="/" component={Demo} />
-		<Route path="/about" component={About} />
-	</Switch>
+		<Switch>
+				<Route exact path="/" component={Overview} />
+				<Route path="/getting-started" component={GettingStarted} />
+				<Route path="/forms" component={Forms} />
+				<Route path="/actions" component={Actions} />
+				<Route path="/redux" component={Redux} />
+				<Route path="/connect" component={Connect} />
+		</Switch>
 );
