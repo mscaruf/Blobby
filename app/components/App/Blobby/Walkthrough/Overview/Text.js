@@ -6,7 +6,6 @@ class Text extends React.Component {
     render() {
         return (
             <section>
-                <h3>Why?</h3>
                 <p>I noticed that, whenever I start a new React project,
                     I find my self to waste a lot of time in setting up the
                     whole environment just to end up with the same situation
