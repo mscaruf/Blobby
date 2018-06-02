@@ -10,6 +10,7 @@ const App = () =>
         <footer className={footer}>
             <Link to="/">Overview</Link>
             <Link to="/getting-started">Getting started</Link>
+            <Link to="/assets">Assets</Link>
             <Link to="/forms">Forms</Link>
             <Link to="/actions">Actions</Link>
             <Link to="/redux">Redux</Link>
