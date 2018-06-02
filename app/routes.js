@@ -12,11 +12,12 @@ import Connect from './components/App/Blobby/Walkthrough/Connect/Connect';
 export default (
 		<Switch>
 				<Route exact path="/" component={Overview} />
-				<Route path="/getting-started" component={GettingStarted} />
-				<Route path="/assets" component={Assets} />
-				<Route path="/forms" component={Forms} />
-				<Route path="/actions" component={Actions} />
-				<Route path="/redux" component={Redux} />
-				<Route path="/connect" component={Connect} />
+				<Route path="/walkthrough/overview" component={Overview} />
+				<Route path="/walkthrough/getting-started" component={GettingStarted} />
+				<Route path="/walkthrough/assets" component={Assets} />
+				<Route path="/walkthrough/forms" component={Forms} />
+				<Route path="/walkthrough/actions" component={Actions} />
+				<Route path="/walkthrough/redux" component={Redux} />
+				<Route path="/walkthrough/connect" component={Connect} />
 		</Switch>
 );
