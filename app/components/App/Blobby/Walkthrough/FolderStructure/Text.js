@@ -6,7 +6,29 @@ class Text extends React.Component {
     render() {
         return (
             <section>
-                <p>Folder Structure content...</p>
+                <p>Let's take a look at Blobby's folder structure</p>
+
+                <pre>
+                    <code>
+{`app/
+    actions/
+        functions/
+    assets/
+        images/
+        ...
+    components/
+        App/
+        ...
+    reducers/
+        base/
+        blobby/
+        ...
+    store/
+    styles/
+node_modules/`}
+                    </code>
+                </pre>
+
             </section>
         );
     }
