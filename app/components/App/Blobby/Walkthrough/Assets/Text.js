@@ -19,8 +19,11 @@ class Text extends React.Component {
 
                 <img src="/images/blobby.png"/>
 
-                <p>That actually doesn't require Einstein's IQ to be understood,
-                but it's better to make it clear.</p>
+                <p>You can create all the folders/subfolders you want inside <i>app/assets</i> folder.
+                They will be added automatically to webpack server's directory.</p>
+
+                <p>That actually doesn't require Einstein's IQ to be understood. I think even
+                the Blobby mascotte would have that figured out. But it was better to make it clear.</p>
             </section>
         );
     }

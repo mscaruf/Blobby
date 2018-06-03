@@ -21,7 +21,8 @@ npm start`}
                 </code>
               </pre>
 
-                <p>The <i>clean</i> branch has this walkthrough components and references removed from the project.</p>
+                <p>The <i>clean</i> branch has this walkthrough components and references
+                removed from the project. In this way you can directly start working on your stuff.</p>
             </section>
         );
     }
