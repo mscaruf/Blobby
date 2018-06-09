@@ -6,6 +6,9 @@ import BlobbyList from './List/BlobbyList';
 
 import * as BlobbyActions from '../../../../../actions/functions/blobby';
 
+import TextBefore from './TextBefore';
+import TextAfter from './TextAfter';
+
 class Forms extends React.Component {
 
     constructor(props) {
@@ -22,10 +25,12 @@ class Forms extends React.Component {
     render() {
         return (
             <div>
-                <div>Simple Form section...</div>
+                <TextBefore />
 
                 <BlobbyForm callback={this.addBlobbyToList} />
                 <BlobbyList list={this.state.list} />
+
+                <TextAfter />
             </div>
         );
     }

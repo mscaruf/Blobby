@@ -22,12 +22,6 @@ class BlobbyForm extends React.Component {
 
     render(){
 
-      const validate = value => ({
-          error: !value || !/Hello World/.test(value) ? "Input must contain 'Hello World'" : null,
-          warning: !value || !/^Hello World$/.test(value) ? "Input should equal just 'Hello World'" : null,
-          success: value && /Hello World/.test(value) ? "Thanks for entering 'Hello World'!" : null
-          })
-
         return(
 
             // all form elemnts gets wrapped inside of a variable (formApi)
@@ -51,13 +45,6 @@ class BlobbyForm extends React.Component {
                             <label htmlFor="radio-input-beyond" className="mr-2">Blobbies culture goes beyond gender labels</label>
                             <Radio value="beyond" id="radio-input-beyond" />
                         </RadioGroup>
-                        {
-                          /*
-                          <label htmlFor="hello">Hello World</label>
-                          <Text type="text" className="u-full-width" field="hello" id="hello" validate={validate} />
-                          {(typeof formApi.errors !== 'undefined') && <p>{formApi.errors.hello}</p>}
-                          */
-                        }
 
                         <label htmlFor="age">Age</label>
                         <Text type="text" field="age" id="age" />

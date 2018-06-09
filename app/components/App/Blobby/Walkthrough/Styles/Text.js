@@ -17,7 +17,7 @@ class Text extends React.Component {
 
                 <p><code>@import "~skeleton-css/css/skeleton.css"</code></p>
 
-                <p>In order to load the styles into the project, <i>globals.scss</i>
+                <p>In order to load the styles into the project, <i>globals.scss </i>
                 has to be imported into the App component.</p>
             </section>
         );

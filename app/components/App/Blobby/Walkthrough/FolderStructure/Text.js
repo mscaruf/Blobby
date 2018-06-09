@@ -39,7 +39,7 @@ class Text extends React.Component {
                 <p><i>components</i> folder contains (you guessed it) React components.
                 These are the elements composing your application</p>
 
-                <p><i>reducers</i> folder contains Redux stuff. In Blobby Redux is implemented with classes.
+                <p><i>reducers</i> folder contains Redux stuff. In Blobby, Redux is implemented with classes.
                 To learn how it works, please check-out <Link to="/walkthrough/redux">Redux</Link> section.</p>
 
                 <p><i>store</i> folder contains Redux store, the entity that contains the state of your application
