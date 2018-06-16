@@ -27,3 +27,30 @@
 .walkthrough-content form .row {
   margin-bottom: 10px;
 }
+
+.blobby-elem-male {
+  background-image: url('/images/list/male.png');
+  background-origin: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.blobby-elem-female {
+  background-image: url('/images/list/female.png');
+  background-origin: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.blobby-elem-beyond {
+  background-image: url('/images/list/beyond.png');
+  background-origin: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+}

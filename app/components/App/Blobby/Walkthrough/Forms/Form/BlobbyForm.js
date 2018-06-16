@@ -31,6 +31,7 @@ class BlobbyForm extends React.Component {
             <Form>
             {formApi => (
                 <div className="row">
+                  <h3>Add a Blobby!</h3>
                     <form onSubmit={this.mapFormToComponent(formApi)} id="form1" className="mb-4">
 
                         <div className="row">
