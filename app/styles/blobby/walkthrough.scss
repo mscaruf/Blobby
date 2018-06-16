@@ -1,0 +1,26 @@
+.walkthrough-content {
+  float: left;
+  width:60%;
+}
+
+.walkthrough-menu {
+  float: right;
+  width:30%;
+  border-left: 1px solid #E1E1E1;
+}
+
+.walkthrough-menu ul li {
+  list-style:none;
+  background-image:none;
+  background-repeat:none;
+  background-position:0;
+  padding: 10px 20px;
+}
+
+.walkthrough-menu ul li:hover {
+  background-color: #E1E1E1;
+}
+
+.walkthrough-menu ul a {
+  text-decoration: none;
+}

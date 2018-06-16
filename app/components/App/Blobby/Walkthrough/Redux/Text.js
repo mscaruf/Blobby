@@ -16,8 +16,8 @@ class Text extends React.Component {
                 package <a href="//github.com/redeeps/red-redux-class">documentation</a>.
                 It's really easy to understand.</p>
 
-                <p>In addition to that, Blobby has enabled support for
-                <a href="//github.com/zalmoxisus/redux-devtools-extension">redux-dev-tools</a>.
+                <p>In addition to that, Blobby has enabled support
+                for <a href="//github.com/zalmoxisus/redux-devtools-extension">redux-dev-tools</a>.
                 If you already installed the extension in your browser, open up your developer tools
                 and you should see the related panel. From there you can monitor the whole app state.</p>
 
@@ -48,7 +48,7 @@ class Text extends React.Component {
                 function name and the arguments. In the reducer you catch the function
                 and the arguments and you manipulate is as you want.</p>
 
-              <p>Checkout <Link to="/walkthrough/connect">Connect</Link> section to see how the whole cycle wraps up together.</p>
+              <p>Checkout <Link to="/walkthrough/connect">Connect</Link> section to see how the whole cycle wraps-up together.</p>
             </section>
         );
     }

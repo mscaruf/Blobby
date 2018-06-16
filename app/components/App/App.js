@@ -6,18 +6,22 @@ import Routes from '../../routes';
 const App = () =>
     <div className="container">
         <h1>Blobby</h1>
-        { Routes }
-        <footer>
-            <Link to="/walkthrough/overview">Overview</Link>
-            <Link to="/walkthrough/getting-started">Getting started</Link>
-            <Link to="/walkthrough/folder-structure">Folder structure</Link>
-            <Link to="/walkthrough/styles">Styles</Link>
-            <Link to="/walkthrough/assets">Assets</Link>
-            <Link to="/walkthrough/forms">Forms</Link>
-            <Link to="/walkthrough/actions">Actions</Link>
-            <Link to="/walkthrough/redux">Redux</Link>
-            <Link to="/walkthrough/connect">Connect</Link>
-        </footer>
+        <div className="walkthrough-content">
+          { Routes }
+        </div>
+        <div className="walkthrough-menu">
+          <ul>
+            <Link to="/walkthrough/overview"><li>Overview</li></Link>
+            <Link to="/walkthrough/getting-started"><li>Getting started</li></Link>
+            <Link to="/walkthrough/folder-structure"><li>Folder structure</li></Link>
+            <Link to="/walkthrough/styles"><li>Styles</li></Link>
+            <Link to="/walkthrough/assets"><li>Assets</li></Link>
+            <Link to="/walkthrough/forms"><li>Forms</li></Link>
+            <Link to="/walkthrough/actions"><li>Actions</li></Link>
+            <Link to="/walkthrough/redux"><li>Redux</li></Link>
+            <Link to="/walkthrough/connect"><li>Connect</li></Link>
+          </ul>
+        </div>
     </div>;
 
 export default App;
