@@ -43,8 +43,8 @@ class BlobbyForm extends React.Component {
                                 <Text type="text" field="age" id="age" />
                             </div>
                         </div>
-                        <label htmlFor="gender">Gender</label>
                         <div className="row">
+                            <label htmlFor="gender">Gender</label>
                             <RadioGroup field="gender">
                                 <div className="four columns">
                                     <label htmlFor="radio-input-male" className="mr-2">Male</label>
