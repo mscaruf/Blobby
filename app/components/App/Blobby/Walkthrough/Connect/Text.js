@@ -37,8 +37,8 @@ export default connect(mapStateToProps)(BlobbyComp);
                     </code>
                   </pre>
 
-                <p>Now you can access all data inside <i>blobbyReducer</i>
-                just by referring to <i>this.props.blobby</i> in the component.</p>
+                <p>Now you can access all data inside <i>blobbyReducer</i> just
+                by referring to <i>this.props.blobby</i> in the component.</p>
             </section>
         );
     }
