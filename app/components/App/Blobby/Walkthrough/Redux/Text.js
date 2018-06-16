@@ -16,6 +16,11 @@ class Text extends React.Component {
                 package <a href="//github.com/redeeps/red-redux-class">documentation</a>.
                 It's really easy to understand.</p>
 
+                <p>In addition to that, Blobby has enabled support for
+                <a href="//github.com/zalmoxisus/redux-devtools-extension">redux-dev-tools</a>.
+                If you already installed the extension in your browser, open up your developer tools
+                and you should see the related panel. From there you can monitor the whole app state.</p>
+
                 <p>Now let's see how events are mapped in Blobby. Let's say you have this action:</p>
 
                 <pre>

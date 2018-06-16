@@ -9,6 +9,7 @@ A boilerplate for React with following features:
 - wrapper for Axios actions (to keep code clean)
 - easy form/model binding
 - preconfigured assets folder.
+- redux-devtools browser extension. 
 - ES 6-7
 - WebPack
 
