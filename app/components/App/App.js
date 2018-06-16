@@ -5,7 +5,7 @@ import Routes from '../../routes';
 
 const App = () =>
     <div className="container">
-        <h1>Blobby</h1>
+        <div className="blobby-header"></div>
         <div className="walkthrough-content">
           { Routes }
         </div>
