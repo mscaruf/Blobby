@@ -33,26 +33,42 @@ class BlobbyForm extends React.Component {
                 <div className="row">
                     <form onSubmit={this.mapFormToComponent(formApi)} id="form1" className="mb-4">
 
-                        <label htmlFor="name">Name</label>
-                        <Text type="text" field="name" id="name" />
-
+                        <div className="row">
+                            <div className="six columns">
+                                <label htmlFor="name">Name</label>
+                                <Text type="text" field="name" id="name" />
+                            </div>
+                            <div className="six columns">
+                                <label htmlFor="age">Age</label>
+                                <Text type="text" field="age" id="age" />
+                            </div>
+                        </div>
                         <label htmlFor="gender">Gender</label>
-                        <RadioGroup field="gender">
-                            <label htmlFor="radio-input-male" className="mr-2">Male</label>
-                            <Radio value="male" id="radio-input-male" />
-                            <label htmlFor="radio-input-female" className="mr-2">Female</label>
-                            <Radio value="female" id="radio-input-female" />
-                            <label htmlFor="radio-input-beyond" className="mr-2">Blobbies culture goes beyond gender labels</label>
-                            <Radio value="beyond" id="radio-input-beyond" />
-                        </RadioGroup>
-
-                        <label htmlFor="age">Age</label>
-                        <Text type="text" field="age" id="age" />
-
-                        <label htmlFor="text-area-input-description">Description</label>
-                        <TextArea field="description" id="text-area-input-description" />
-
-                        <input type="submit" className="btn btn-primary" onClick={this.submit} value="Add"/>
+                        <div className="row">
+                            <RadioGroup field="gender">
+                                <div className="four columns">
+                                    <label htmlFor="radio-input-male" className="mr-2">Male</label>
+                                    <Radio value="male" id="radio-input-male" />
+                                </div>
+                                <div className="four columns">
+                                    <label htmlFor="radio-input-female" className="mr-2">Female</label>
+                                    <Radio value="female" id="radio-input-female" />
+                                </div>
+                                <div className="four columns">
+                                    <label htmlFor="radio-input-beyond" className="mr-2">Beyond gender labels</label>
+                                    <Radio value="beyond" id="radio-input-beyond" />
+                                </div>
+                            </RadioGroup>
+                        </div>
+                        <div className="row">
+                            <div className="twelve columns">
+                                <label htmlFor="text-area-input-description">Description</label>
+                                <TextArea field="description" id="text-area-input-description" />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <input type="submit" className="btn btn-primary" onClick={this.submit} value="Add"/>
+                        </div>
                     </form>
                 </div>
             )}
