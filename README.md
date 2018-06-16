@@ -18,7 +18,6 @@ A boilerplate for React with following features:
 
 ```bash
 npm install
-git checkout blobby-walkthrough
 npm start
 ```
 
