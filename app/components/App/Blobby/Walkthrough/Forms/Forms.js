@@ -25,6 +25,7 @@ class Forms extends React.Component {
     render() {
         return (
             <div>
+                <h2>Forms</h2>
                 <TextBefore />
 
                 <BlobbyForm callback={this.addBlobbyToList} />

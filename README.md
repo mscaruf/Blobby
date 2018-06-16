@@ -14,8 +14,6 @@ A boilerplate for React with following features:
 
 ## Getting started:
 
-
-
 ```bash
 npm install
 npm start
